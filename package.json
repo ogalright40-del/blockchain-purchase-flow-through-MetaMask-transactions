@@ -1,0 +1,13 @@
+{
+  "name": "blockshop",
+  "version": "1.0.0",
+  "description": "BlockShop — Full-Stack Decentralized E-Commerce on Ethereum",
+  "scripts": {
+    "install:all":      "cd blockchain && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "chain":            "cd blockchain && npx hardhat node",
+    "deploy":           "cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+    "backend":          "cd backend && npm start",
+    "frontend":         "cd frontend && npm start",
+    "test:contracts":   "cd blockchain && npx hardhat test"
+  }
+}
